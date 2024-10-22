@@ -4,7 +4,7 @@ export default function BotaoModo({ children, modoBotao }) {
     <button
       className={`
         ${styles["cronometer-modes__button"]}
-        ${ativo ? styles["cronometer-modes__button--active"] : ""}
+        ${styles["cronometer-modes__button--active"]}
       `}
     >
       {children}
