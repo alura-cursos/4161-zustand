@@ -1,0 +1,44 @@
+.header__logo-figure {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.header__section-banner-container {
+  width: 99rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.header__title {
+  line-height: 150%;
+  font-size: 5.2rem;
+  font-style: normal;
+  color: var(--color-secondary);
+  font-weight: 200;
+  max-width: 46rem;
+}
+
+.header__title-strong {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .header__section-banner-container {
+    width: 48rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__section-banner-container {
+    width: 32rem;
+  }
+
+  .header__title {
+    font-size: 2.6rem;
+  }
+}

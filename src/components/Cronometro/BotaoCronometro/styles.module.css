@@ -1,0 +1,22 @@
+.cronometer__primary-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cronometer__primary-button {
+  padding: 0.8rem;
+  width: 12rem;
+  color: var(--color-secondary);
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 3.2rem;
+  background: var(--linear-botes);
+  margin-top: 3.2rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

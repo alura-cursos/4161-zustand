@@ -1,0 +1,14 @@
+.app--foco {
+  background-image: url("/pattern.png"),
+    linear-gradient(180deg, #8b1ff8 0%, #041832 48.44%, #01080e 100%);
+}
+
+.app--descanso-curto {
+  background-image: url("/pattern.png"),
+    linear-gradient(180deg, #0f725c 0%, #041832 48.44%, #01080e 100%);
+}
+
+.app--descanso-longo {
+  background-image: url("/pattern.png"),
+    linear-gradient(180deg, #1875e9 0%, #041832 48.44%, #01080e 100%);
+}

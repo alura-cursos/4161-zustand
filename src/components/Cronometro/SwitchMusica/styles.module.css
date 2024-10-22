@@ -1,0 +1,61 @@
+.toggle {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.toggle:hover .toggle__switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.toggle__checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle__checkbox:checked + .toggle__switch {
+  background: var(--lils);
+}
+
+.toggle__checkbox:checked + .toggle__switch:before {
+  left: 3rem;
+}
+
+.toggle__switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 1.6rem;
+  width: 5.8rem;
+  height: 3.2rem;
+  position: relative;
+  vertical-align: middle;
+  transition: background-color 0.25s;
+}
+
+.toggle__switch:before,
+.toggle__switch:after {
+  content: "";
+}
+
+.toggle__switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  transition: left 0.25s;
+}
+
+.toggle__span {
+  color: var(--color-secondary);
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+}
