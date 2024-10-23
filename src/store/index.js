@@ -1,3 +1,5 @@
+import { create } from "zustand";
+
 export const MODO_CRONOMETRO = {
   FOCO: {
     id: "foco",
