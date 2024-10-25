@@ -3,7 +3,6 @@ import styles from "./styles.module.css";
 export default function BotaoModo({ children, modoBotao }) {
   const modoCronometro = useCronometroStore((estado) => estado.modoCronometro);
   const setModoCronometro = useCronometroStore((estado) => estado.setModoCronometro);
-  console.log(modoCronometro);
   const ativo = modoBotao.id === modoCronometro.id;
 
   function aoClicar() {
