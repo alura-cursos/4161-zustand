@@ -1,4 +1,7 @@
 import { create } from "zustand";
+import audioTempoFinalizadoSom from "/src/assets/sons/beep.mp3";
+
+const audioTempoFinalizado = new Audio(audioTempoFinalizadoSom);
 
 export const MODO_CRONOMETRO = {
   FOCO: {
@@ -54,6 +57,7 @@ function computarContagemRegressiva() {
   if (tempoAtual > 0) {
     decrementarTempo();
   } else {
+    audioTempoFinalizado.play();
     pausarCronometro();
     redefinirTempo();
   }

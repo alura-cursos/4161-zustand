@@ -10,10 +10,15 @@ export default function BotaoCronometro() {
   const iniciarCronometro = useCronometroStore((estado) => estado.iniciarCronometro);
   const pausarCronometro = useCronometroStore((estado) => estado.pausarCronometro);
 
+  const audioPlay = new Audio(audioPlaySom);
+  const audioPause = new Audio(audioPauseSom);
+
   function iniciarOuPausar() {
     if (!intervaloId) {
+      audioPlay.play();
       iniciarCronometro();
     } else {
+      audioPause.play();
       pausarCronometro();
     }
   }
